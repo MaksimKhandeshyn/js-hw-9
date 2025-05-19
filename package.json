@@ -1,0 +1,25 @@
+{
+  "name": "js-hw-9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksimKhandeshyn/js-hw-9.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MaksimKhandeshyn/js-hw-9/issues"
+  },
+  "homepage": "https://github.com/MaksimKhandeshyn/js-hw-9#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
