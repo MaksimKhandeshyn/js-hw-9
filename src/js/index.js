@@ -19,5 +19,33 @@ function addContact() {
   const saveEmail = localStorage.setItem("email", email);
   const savePhone = localStorage.setItem("phone", phone);
 
-  alert("Contact added successfully!");
+  if (
+    refs.input.value === "" ||
+    refs.email.value === "" ||
+    refs.phone.value === ""
+  ) {
+    alert("Please fill in all fields.");
+    return;
+  } else {
+    alert("Contact added successfully!");
+  }
+}
+
+refs.update.addEventListener("click", updateContact);
+
+function updateContact() {
+  refs.input.value = localStorage.getItem("name");
+  refs.email.value = localStorage.getItem("email");
+  refs.phone.value = localStorage.getItem("phone");
+}
+refs.delete.addEventListener("click", deleteContact);
+function deleteContact() {
+  localStorage.removeItem("name");
+  localStorage.removeItem("email");
+  localStorage.removeItem("phone");
+  refs.input.value = "";
+  refs.email.value = "";
+  refs.phone.value = "";
+  alert("Contact deleted successfully!");
+  localStorage.clear();
 }
